@@ -1,0 +1,4 @@
+\.git(ignore|/)
+MANIFEST\.bak
+MYMETA\.(json|yml)
+\..*\.swp
