@@ -1,10 +1,9 @@
 lib/MooX/Role/HTTP/Tiny.pm
-Makefile
 Makefile.PL
 MANIFEST			This list of files
 MANIFEST.SKIP
 README.md
-examples/pod-example.pl
+examples/metacpan.pl
 t/001-basic.t
 t/Test/abeltje.pm
 xt/00-manifest.t

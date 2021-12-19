@@ -2,3 +2,4 @@
 MANIFEST\.bak
 MYMETA\.(json|yml)
 \..*\.swp
+Makefile$
