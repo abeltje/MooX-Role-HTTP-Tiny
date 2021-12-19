@@ -2,7 +2,7 @@ package MooX::Role::HTTP::Tiny;
 use Moo::Role;
 use Types::Standard qw( InstanceOf Maybe HashRef );
 
-our $VERSION = '0.91';
+our $VERSION = '0.92';
 
 use URI;
 use HTTP::Tiny;
