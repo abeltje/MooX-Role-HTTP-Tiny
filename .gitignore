@@ -1,1 +1,4 @@
 .*.swp
+MYMETA.*
+META.*
+Makefile
