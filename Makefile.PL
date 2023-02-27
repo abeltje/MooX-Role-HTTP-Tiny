@@ -12,10 +12,13 @@ my %makefile_arguments = (
     LICENSE       => 'perl_5',
 
     PREREQ_PM => {
-        'HTTP::Tiny'           => '0.012',
-        'Moo'                  => '2.003',
-        'Types::Standard'      => '1.008',
-        'namespace::autoclean' => '0.28',
+        'HTTP::Tiny'                       => '0.012',
+        'Moo'                              => '2.003',
+        'Types::Standard'                  => '1.008',
+        'namespace::autoclean'             => '0.28',
+        'URI'                              => '1.53',
+        'JSON'                             => '4.10',
+        'MooX::Params::CompiledValidators' => '0.05',
     },
     CONFIGURE_REQUIRES => {
         'ExtUtils::MakeMaker' => '6.55_02',

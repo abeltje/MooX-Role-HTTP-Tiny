@@ -45,7 +45,8 @@ use JSON;
             my ($params) = @_;
 
             use URI; my $u = URI->new('http://none/');
-            for my $k (sort keys %$params) { $u->query_param_append($k, $params->{$k}); }
+	    $u->query_form(map { ($_ => $params->{$_}) } sort keys %$params)
+	        if $params;
             return $u->query();
         },
     );
@@ -96,7 +97,8 @@ use JSON;
             my ($params) = @_;
 
             use URI; my $u = URI->new('http://none/');
-            for my $k (sort keys %$params) { $u->query_param_append($k, $params->{$k}); }
+	    $u->query_form(map { ($_ => $params->{$_}) } sort keys %$params)
+	        if $params;
             return $u->query();
         },
     );

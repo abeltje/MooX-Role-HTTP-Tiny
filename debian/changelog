@@ -1,3 +1,9 @@
+libmoox-role-http-tiny-perl (0.94-2) unstable; urgency=low
+
+  * minor updates with dependencies and backward compat
+
+ -- Abe Timmerman <abeltje@cpan.org>  Mon, 27 Feb 2023 16:12:39 +0100
+
 libmoox-role-http-tiny-perl (0.94-1) unstable; urgency=low
 
   * Initial release.
