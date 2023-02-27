@@ -1,0 +1,29 @@
+Source: libmoox-role-http-tiny-perl
+Maintainer: Ubuntu <abeltje@cpan.org>
+Section: perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libhttp-tiny-perl <!nocheck>,
+                     libmoo-perl <!nocheck>,
+                     libnamespace-autoclean-perl <!nocheck>,
+                     libtest-fatal-perl <!nocheck>,
+                     libtest-mockobject-perl <!nocheck>,
+                     libtest-simple-perl <!nocheck>,
+                     libtest-warnings-perl (>= 0.028) <!nocheck>,
+                     libtype-tiny-perl <!nocheck>,
+                     perl
+Standards-Version: 4.6.0
+Homepage: https://metacpan.org/release/MooX-Role-HTTP-Tiny
+Rules-Requires-Root: no
+
+Package: libmoox-role-http-tiny-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libhttp-tiny-perl,
+         libmoo-perl,
+         libnamespace-autoclean-perl,
+         libtype-tiny-perl
+Description: L<HTTP::Tiny> as a role for clients that use HTTP
+ .
+ This description was automagically extracted from the module by dh-make-perl.
