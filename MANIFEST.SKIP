@@ -3,3 +3,4 @@ MANIFEST\.bak
 MYMETA\.(json|yml)
 \..*\.swp
 Makefile$
+MooX-Role-HTTP-Tiny-.+/

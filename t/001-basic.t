@@ -2,7 +2,8 @@
 use t::Test::abeltje;
 use Test::MockObject;
 
-package TestClass {
+{
+    package TestClass;
     use Moo;
     with 'MooX::Role::HTTP::Tiny';
 
@@ -18,6 +19,21 @@ package TestClass {
     isa_ok($client, 'TestClass');
     isa_ok($client->ua, 'HTTP::Tiny');
     isa_ok($client->base_uri, 'URI::http');
+}
+
+{
+    # Test::MockObject doesn't seem to work here, so oldskool :'(
+    my $cj = bless({}, 'Mock::CookieJar');
+    sub Mock::CookieJar::add { return $_[2] }
+    sub Mock::CookieJar::cookie_header { return $_[1] }
+
+    my $client = TestClass->new(
+        base_uri   => 'http://localhost/',
+        ua_options => { cookie_jar => $cj },
+    );
+    isa_ok($client, 'TestClass');
+    isa_ok($client->ua, 'HTTP::Tiny');
+    isa_ok($client->ua->cookie_jar, 'Mock::CookieJar');
 }
 
 {

@@ -1,4 +1,5 @@
 lib/MooX/Role/HTTP/Tiny.pm
+lib/MooX/Role/REST.pm
 Changes
 Makefile.PL
 MANIFEST			This list of files
@@ -8,6 +9,7 @@ META.yml
 README.md
 examples/metacpan.pl
 t/001-basic.t
+t/100-rest.t
 t/Test/abeltje.pm
 xt/00-manifest.t
 xt/01-compile.t

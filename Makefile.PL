@@ -9,7 +9,7 @@ my %makefile_arguments = (
     VERSION_FROM  => 'lib/MooX/Role/HTTP/Tiny.pm',
     ABSTRACT_FROM => 'lib/MooX/Role/HTTP/Tiny.pm',
     AUTHOR        => 'Abe Timmerman <abeltje@cpan.org>',
-    LICENSE       => 'perl',
+    LICENSE       => 'perl_5',
 
     PREREQ_PM => {
         'HTTP::Tiny'           => '0.012',
@@ -34,15 +34,18 @@ my %makefile_arguments = (
         'meta-spec' => {
             version    => 2,
         },
-#        'resources' => {
-#            homepage  => 'https://github.com/abeltje/MooX-Role-HTTP-Tiny',
-#            repository => {
-#                type   => 'git',
-#                url    => 'git@github.com:abeltje/MooX-Role-HTTP-Tiny.git',
-#                web    => 'https://github.com/abeltje/MooX-Role-HTTP-Tiny.git',
-#            },
+        'resources' => {
+            homepage  => 'https://github.com/abeltje/MooX-Role-HTTP-Tiny',
+            repository => {
+                type   => 'git',
+                url    => 'https://github.com/abeltje/MooX-Role-HTTP-Tiny.git',
+                web    => 'https://github.com/abeltje/MooX-Role-HTTP-Tiny',
+            },
+            bugtracker => {
+                web => 'https://github.com/abeltje/MooX-Role-REST/issues',
+            },
 #            x_IRC      => 'irc://irc.perl.org/#amsterdam.pm',
-#        },
+        },
     },
 );
 WriteMakefile(%makefile_arguments);

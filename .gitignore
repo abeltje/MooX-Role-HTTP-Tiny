@@ -2,3 +2,7 @@
 MYMETA.*
 META.*
 Makefile
+blib/
+pm_to_blib
+cover_db/
+MooX-Role-HTTP-Tiny-*/
